@@ -3,19 +3,31 @@ const btn_avancar = document.getElementById("avancar");
 const btn_voltar = document.getElementById("voltar");
 const btn_enviar = document.getElementById("enviar");
 const form = document.getElementById("form-contato")
+const slider = document.getElementById("page-slider");
 const max_pages = pages.length;
 
+console.log(slider);
 
 var display_page = 0;
 
 function showPage(){
 
+    
     pages.forEach(page => {
-        page.style.display = 'none';
+        page.classList.remove('active');
     })
 
-    pages[display_page].style.display = 'block';
-
+    pages[display_page].classList.add('active');
+    
+    if(display_page == 1){
+        
+        slider.classList.add("up");
+        slider.classList.remove("down");
+    }else if(display_page == 0){
+        console.log('entrou')
+        slider.classList.remove("up");
+        slider.classList.add("down");
+    }
 
     showButtons();
 }
@@ -52,16 +64,15 @@ function changePage(n){
     showPage();
 }
 
-function submitForm(){
+function submitForm(event){
     for (const i of pages[display_page].querySelectorAll("[required]")) {
         if (!i.reportValidity()) return;
     }
-    
+
     form.submit();
+    window.location.href = "thanks.html";
     alert('Sua mensagem foi enviada!');
     
 }
-
-//form.addEventListener('submit', handleSubmit);
 
 showPage();

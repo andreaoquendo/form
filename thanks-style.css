@@ -19,14 +19,6 @@ h3{
   font-size: 1.3em;
 }
 
-input, textarea{
-  font-family: "Poppins", sans-serif;
-}
-
-input:focus, textarea:focus{
-  outline: none;
-}
-
 .container{
   background-color: white;
   display: flex;
@@ -61,64 +53,22 @@ input:focus, textarea:focus{
   width: 270px;
 }
 
-.red{
-  color: red;
-}
-
-#form-contato p, #form-contato input{
-  margin: 5px 0;
-}
-.page{
-  margin-bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.buttons{
-  position: absolute;
-  bottom: 10px;
-  left:auto;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-.page.active{
-  visibility: visible;
-  transform: none;
-  opacity: 1;
-}
-
-#form-contato{
-  transition: ease-in-out 0.5s;
-}
-
-#page-slider{
-
-  transition: all ease-in-out 0.5s;
-}
-
-.down{
-  transform: none;
-}
-
-.up{
-  transform: translateY(-260px);
-}
-
 #box-right{
   margin-bottom: 20px;
 }
 
 #box-left{
   height:380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 button{
   border: none;
   border-radius: 20px;
-  width: 200px;
+  width: 220px;
   height: 40px;
   color: white;
   background-color: #536dfe;
@@ -136,35 +86,7 @@ button:hover{
   opacity: 0.5;
 }
 
-input{
-  width: 300px;
-  border: none;
-  height: 33px;
-  background-color: rgba(171,171,171,0.09);
-  border-radius: 15px;
-  padding-left: 13px;
-  margin-bottom: 10px;
-  font-size:15px;
-  color:#3F3F3F;
-}
 
-textarea{
-  width: 300px;
-  height: 112px;
-  background-color: rgba(171,171,171,0.09);
-  border-radius: 15px;
-  font-size:15px;
-  color:#3F3F3F;
-  border: none;
-  resize: none;
-  padding: 15px;
-}
-
-
-input:focus{
-  outline: none;
-  
-}
 
 @media screen and (min-width: 950px){
   

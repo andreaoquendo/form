@@ -12,23 +12,23 @@
         <div class="box" id='box-left'>
             <h3>Contate-nos!</h3>
             <form id="form-contato">
-            
-                <div class="page">
-                    <p>Nome <span class='red'>*</span> :</p>
-                    <input type="text" id = "nomezin" name="nome" required/>
-                    <p>Telefone:</p>
-                    <input type="tel" name="telefone" />
-                    <p>E-mail <span class='red'>*</span> :</p>
-                    <input type="email" name="email"  required />
-                </div>
+                <div id="page-slider">
+                    <div class="page">
+                        <p>Nome <span class='red'>*</span> :</p>
+                        <input type="text" id = "nomezin" name="nome" required/>
+                        <p>Telefone:</p>
+                        <input type="tel" name="telefone" />
+                        <p>E-mail <span class='red'>*</span> :</p>
+                        <input type="email" name="email"  required />
+                    </div>
 
-                <div class="page">
-                <p>Assunto: </p>
-                <input type="text" name="assunto" placeholder="Assunto" />
-                <p>Mensagem <span class='red'>*</span> :</p>
-                <textarea id="mensagem" name="mensagem"  placeholder= "Escreva sua mensagem..." required></textarea>
+                    <div class="page">
+                    <p>Assunto: </p>
+                    <input type="text" name="assunto" placeholder="Assunto" />
+                    <p>Mensagem <span class='red'>*</span> :</p>
+                    <textarea id="mensagem" name="mensagem"  placeholder= "Escreva sua mensagem..." required></textarea>
+                    </div>
                 </div>
-
                 <div class="buttons">
                     <button type="button" id="voltar" onclick="changePage(-1)">Voltar</button>
                     <button type="button" id="avancar" onclick="changePage(1)">Avançar</button>
