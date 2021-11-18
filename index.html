@@ -8,24 +8,26 @@
     <title>Contate-nos!</title>
 </head>
 <body>
+    <!-- Container geral -->
     <div class="container">
+        <!-- boxes para poder deixar mais web-responsive e poder dividir melhor a tela -->
         <div class="box" id='box-left'>
             <h3>Contate-nos!</h3>
             <form id="form-contato">
                 <div id="page-slider">
                     <div class="page">
-                        <p>Nome <span class='red'>*</span> :</p>
-                        <input type="text" id = "nomezin" name="nome" required/>
-                        <p>Telefone:</p>
+                        <p><label for="nome">Nome </label><span class='red'>*</span> :</p>
+                        <input type="text" name="nome" required/>
+                        <p><label for="telefone">Telefone:</label></p>
                         <input type="tel" name="telefone" />
-                        <p>E-mail <span class='red'>*</span> :</p>
+                        <p><label for="email">E-mail </label><span class='red'>*</span> :</p>
                         <input type="email" name="email"  required />
                     </div>
 
                     <div class="page">
-                    <p>Assunto: </p>
+                    <p><label for="assunto">Assunto: </label></p>
                     <input type="text" name="assunto" placeholder="Assunto" />
-                    <p>Mensagem <span class='red'>*</span> :</p>
+                    <p><label for="mensagem">Mensagem </label><span class='red'>*</span> :</p>
                     <textarea id="mensagem" name="mensagem"  placeholder= "Escreva sua mensagem..." required></textarea>
                     </div>
                 </div>

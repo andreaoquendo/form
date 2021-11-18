@@ -10,6 +10,7 @@ console.log(slider);
 
 var display_page = 0;
 
+/* Mostrar a página correta do formulário */
 function showPage(){
 
     
@@ -32,6 +33,7 @@ function showPage(){
     showButtons();
 }
 
+/* Mostrar os botões correspondentes à página do formulário */
 function showButtons(){
 
     btn_voltar.style.display = 'none';
@@ -50,9 +52,9 @@ function showButtons(){
 
 }
 
+/* Checar se todos os campos requeridos estão preenchidos e mudar de página. */
 function changePage(n){
 
-    
     if(n == 1){
         for (const i of pages[display_page].querySelectorAll("[required]")) {
             if (!i.reportValidity()) return;
@@ -64,6 +66,7 @@ function changePage(n){
     showPage();
 }
 
+/* Submeter o formulário e ir para a página de agradecimento. */
 function submitForm(event){
     for (const i of pages[display_page].querySelectorAll("[required]")) {
         if (!i.reportValidity()) return;
@@ -71,7 +74,6 @@ function submitForm(event){
 
     form.submit();
     window.location.href = "thanks.html";
-    alert('Sua mensagem foi enviada!');
     
 }
 

@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/*--- small reset ---*/
+
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -25,94 +27,6 @@ input, textarea{
 
 input:focus, textarea:focus{
   outline: none;
-}
-
-.container{
-  background-color: white;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
-  -webkit-box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
-  -moz-box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
-  height: auto;
-  max-height: 800px;
-  margin-top: 50px;
-}
-
-.buttons{
-  display: flex;
-  gap:10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.box{
-  width: 300px;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.box img{
-  width: 270px;
-}
-
-.red{
-  color: red;
-}
-
-#form-contato p, #form-contato input{
-  margin: 5px 0;
-}
-.page{
-  margin-bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.buttons{
-  position: absolute;
-  bottom: 10px;
-  left:auto;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-.page.active{
-  visibility: visible;
-  transform: none;
-  opacity: 1;
-}
-
-#form-contato{
-  transition: ease-in-out 0.5s;
-}
-
-#page-slider{
-
-  transition: all ease-in-out 0.5s;
-}
-
-.down{
-  transform: none;
-}
-
-.up{
-  transform: translateY(-260px);
-}
-
-#box-right{
-  margin-bottom: 20px;
-}
-
-#box-left{
-  height:380px;
 }
 
 button{
@@ -160,12 +74,102 @@ textarea{
   padding: 15px;
 }
 
-
 input:focus{
   outline: none;
   
 }
 
+.container{
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
+  -webkit-box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
+  -moz-box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
+  height: auto;
+  max-height: 800px;
+  margin-top: 50px;
+}
+
+.box{
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.box img{
+  width: 270px;
+}
+
+.red{
+  color: red;
+}
+
+#form-contato p, #form-contato input{
+  margin: 5px 0;
+}
+.page{
+  margin-bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.buttons{
+  position: absolute;
+  bottom: 10px;
+  left:auto;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+
+  display: flex;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.page.active{
+  visibility: visible;
+  transform: none;
+  opacity: 1;
+}
+
+#form-contato{
+  transition: ease-in-out 0.5s;
+}
+
+/*--- Troca de tela do forumário ---*/
+#page-slider{
+  transition: all ease-in-out 0.5s;
+}
+
+.down{
+  transform: none;
+}
+
+.up{
+  transform: translateY(-260px);
+}
+
+/*--- Especificações de cada caixa ---*/
+
+#box-right{
+  margin-bottom: 20px;
+}
+
+#box-left{
+  height:380px;
+}
+
+
+/* web-responsive */
 @media screen and (min-width: 950px){
   
   .container{
@@ -181,5 +185,9 @@ input:focus{
 
   .box img{
     width: 350px;
+  }
+
+  #box-right{
+    margin: 0;
   }
 }
