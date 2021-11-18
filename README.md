@@ -1,5 +1,7 @@
 # Desafio do Estágio da PragmaSchool
 
+Concorrente: Andrea Alexandra Sánez Oquendo
+
 Requisitos:
 
 1. Criar um formulário de contato com pelo menos duas telas.
