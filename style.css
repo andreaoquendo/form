@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: rgb(20,8,215);
+  background: linear-gradient(90deg, rgba(20,8,215,1) 0%, rgba(83,109,254,1) 35%, rgba(118,232,255,1) 100%);
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+input, textarea{
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+.container{
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
+  -webkit-box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
+  -moz-box-shadow: -8px 20px 18px 1px rgba(0,0,0,0.14);
+  height: auto;
+  max-height: 800px;
+  margin-top: 50px;
+}
+
+.buttons{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  width: 300px;
+  text-align: center;
+}
+
+.box img{
+  width: 270px;
+}
+
+.red{
+  color: red;
+}
+
+#form-contato p, #form-contato input{
+  margin: 5px 0;
+}
+
+.page{
+  margin-bottom: 30px;
+}
+
+#box-right{
+  margin-bottom: 20px;
+}
+
+#box-left{
+  height:380px;
+}
+
+button{
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #536dfe;
+  transition: opacity 0.5s;
+  box-shadow: -1px 6px 5px 2px rgba(83,109,254,0.43);
+  -webkit-box-shadow: -1px 6px 5px 2px rgba(83,109,254,0.43);
+  -moz-box-shadow: -1px 6px 5px 2px rgba(83,109,254,0.43);
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+input{
+  width: 300px;
+  border: none;
+  height: 33px;
+  background-color: rgba(171,171,171,0.09);
+  border-radius: 15px;
+  padding-left: 13px;
+  margin-bottom: 10px;
+  font-size:15px;
+  color:#3F3F3F;
+}
+
+textarea{
+  width: 300px;
+  height: 112px;
+  background-color: rgba(171,171,171,0.09);
+  border-radius: 15px;
+  font-size:15px;
+  color:#3F3F3F;
+  border: none;
+  resize: none;
+  padding: 15px;
+}
+
+
+input:focus{
+  outline: none;
+  
+}
+
+@media screen and (min-width: 950px){
+  
+  .container{
+    flex-direction: row;
+    padding:100px;
+    gap: 50px;
+    max-height: 750px;
+  }
+
+  .box{
+    width:350px;
+  }
+
+  .box img{
+    width: 350px;
+  }
+}
